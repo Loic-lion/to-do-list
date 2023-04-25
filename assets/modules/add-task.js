@@ -5,7 +5,7 @@ export function nouvelleTache() {
 
   const inputTask = input.value;
   const newTask = document.createElement("li");
-  newTask.innerHTML = `<button class="delete">X</button> ${inputTask} <input type="checkbox" class="check"> </input> `;
+  newTask.innerHTML = `<button type="submit" class="delete hidden">X</button> ${inputTask} <input type="checkbox" class="check"> </input> `;
 
   list.appendChild(newTask);
 
