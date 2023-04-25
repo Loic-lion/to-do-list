@@ -126,8 +126,16 @@ table {
 }
 
 ///////////////////////////////////////////////////////
+$width: 375px;
+
 body {
+  display: flex;
+  justify-content: center;
   background-color: rgb(146, 223, 149);
+  .container {
+    width: $width;
+    background-color: rgb(118, 170, 170);
+  }
 }
 .hidden {
   display: none;

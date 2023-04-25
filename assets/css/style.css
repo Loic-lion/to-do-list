@@ -130,7 +130,13 @@ table {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   background-color: rgb(146, 223, 149);
+}
+body .container {
+  width: 375px;
+  background-color: rgb(118, 170, 170);
 }
 
 .hidden {
