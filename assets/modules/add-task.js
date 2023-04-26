@@ -1,4 +1,4 @@
-///////Ajout des tâches//////
+///////AJOUT DES TACHES + SAVE DANS LE LOCAL STORAGE//////
 export function nouvelleTache() {
   const input = document.getElementById("searchbar");
   const list = document.getElementById("container_body_list");
@@ -9,5 +9,7 @@ export function nouvelleTache() {
 
   list.appendChild(newTask);
 
+  const tasks = list.innerHTML;
+  localStorage.setItem("tasks", tasks);
   input.value = "";
 }
