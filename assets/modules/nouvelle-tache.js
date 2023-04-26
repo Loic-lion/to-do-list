@@ -4,8 +4,12 @@ export function nouvelleTache() {
   const list = document.getElementById("container_body_list");
 
   const inputTask = input.value;
+  if (inputTask.trim() == "") {
+    alert("Entrez du texte pour créer une nouvelle tâche");
+    return false;
+  }
   const newTask = document.createElement("li");
-  newTask.innerHTML = `<input type="checkbox" class="check"> </input> ${inputTask} <button type="submit" class="delete hidden">🗑</button> `;
+  newTask.innerHTML = `<input type="checkbox" class="check"> </input> ${inputTask} <button type="submit" class="delete hidden">X</button> `;
 
   list.appendChild(newTask);
 

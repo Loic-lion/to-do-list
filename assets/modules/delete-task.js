@@ -1,6 +1,6 @@
 ////////////////////SUPRESSION DES TACHES + MAJ DU LOCAL STORAGE/////////////////
 
-export function addDeleteListener(cont) {
+export function deleteTache(cont) {
   const container = document.querySelector(cont);
   const list = container.querySelector("#container_body_list");
 
