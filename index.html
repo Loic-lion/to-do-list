@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do-list</title>
     <script type="module" defer src="./assets/script.js"></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/scss/css/style.css" />
   </head>
   <body>
     <section class="container">
@@ -14,14 +14,14 @@
         <div class="container_head_titre">
           <h1>To-Do-List</h1>
         </div>
-        <div class="container_head_search">
+        <form class="container_head_search">
           <input
             type="text"
             id="searchbar"
             class="container_head_search_barre"
           />
-          <button id="bouton-add">Ajouter</button>
-        </div>
+          <button type="submit" id="bouton-add">Ajouter</button>
+        </form>
       </div>
       <div class="container_body">
         <ul id="container_body_list"></ul>
