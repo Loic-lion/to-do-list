@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
     @include responsive-desktop {
       width: $widthbreack;
-      margin-top: 30px;
+      margin-top: 15px;
     }
     &_head {
       height: 100px;
@@ -24,11 +24,11 @@ body {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      background-color: rgb(159, 207, 47);
+
       background: linear-gradient(
         308deg,
-        rgba(159, 207, 47) 0%,
-        rgb(177, 224, 66) 47%
+        #b85042,
+        #a1493d 47%
       );
       border-radius: 8px 8px 0px 0px;
       position: relative;
@@ -38,8 +38,8 @@ body {
     &_body {
       background: linear-gradient(
         308deg,
-        rgba(186, 228, 196, 1) 0%,
-        rgba(186, 202, 182, 1) 47%
+        #e7e8d1,
+        #cfcfbf 47%
       );
       height: 545px;
       border-radius: 0px 0px 8px 8px;
