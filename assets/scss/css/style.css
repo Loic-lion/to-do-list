@@ -149,10 +149,14 @@ button.delete {
   background-color: red;
   border-radius: 50%;
   border-style: none;
-  padding: 6px 9px 6px 9px;
+  height: 19px;
+  width: 19px;
+  padding: 0px;
 }
 button.delete:hover {
   background-color: rgb(179, 17, 17);
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
 }
 
 body {

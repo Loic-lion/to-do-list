@@ -18,10 +18,14 @@ button {
     background-color: red;
     border-radius: 50%;
     border-style: none;
-    padding: px 9px 6px 9px;
+    height: $heightWidthButonDelete;
+    width: $heightWidthButonDelete;
+    padding: 0px;
 
     &:hover {
       background-color: rgb(179, 17, 17);
+      transform: rotate(180deg);
+      transition: transform 0.2s ease-in-out;
     }
   }
 }
