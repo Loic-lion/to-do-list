@@ -9,7 +9,7 @@ export function nouvelleTache() {
     return false;
   }
   const newTask = document.createElement("li");
-  newTask.innerHTML = `<input type="checkbox" class="check"> </input> <p>${inputTask}</p> <button type="button" class="delete hidden"></button> `;
+  newTask.innerHTML = `<input type="checkbox" class="check"> </input> <p>${inputTask}</p> <button type="button" class="button delete hidden"></button> `;
   newTask.classList.add("animate");
   list.appendChild(newTask);
 
