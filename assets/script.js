@@ -22,3 +22,5 @@ window.addEventListener("load", () => {
     list.innerHTML = tasks;
   }
 });
+
+/////////////////////////TEST ANIMATION///////////////
