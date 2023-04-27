@@ -14,6 +14,7 @@ checkbox(".container");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 });
+///////////////Local Stotage///////////////////
 window.addEventListener("load", () => {
   const list = document.getElementById("container_body_list");
   const tasks = localStorage.getItem("tasks");
