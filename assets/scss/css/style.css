@@ -131,7 +131,7 @@ table {
 
 button {
   border-style: none;
-  background-color: #a7beae;
+  background-color: #88cc9c;
   padding: 6px 11px 6px 11px;
   border-radius: 5px;
   color: white;
@@ -139,9 +139,18 @@ button {
   margin-left: 20px;
   box-shadow: 0px 1px 4px 0px rgb(0, 0, 0);
 }
+button#checked_delete {
+  background-color: rgb(214, 44, 44);
+  height: 31px;
+  width: 31px;
+}
+button#checked_delete:hover {
+  box-shadow: 0px 1px 2px 0px rgb(0, 0, 0);
+  background-color: rgb(150, 51, 51);
+}
 button:hover {
   box-shadow: 0px 1px 2px 0px rgb(0, 0, 0);
-  background-color: #718075;
+  background-color: #6e9b7b;
 }
 button.delete {
   margin-left: 11px;
@@ -195,6 +204,37 @@ body .container_head {
   position: relative;
   z-index: 2;
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+body .container_head_info {
+  display: flex;
+  position: absolute;
+  top: 105px;
+  right: 40px;
+  color: rgb(0, 0, 0);
+  font-family: "Neucha", cursive;
+}
+@media screen and (min-width: 600px) {
+  body .container_head_info {
+    top: 45px;
+    right: 0px;
+    color: white;
+  }
+}
+body .container_head_info_desktop {
+  visibility: hidden;
+}
+@media screen and (min-width: 600px) {
+  body .container_head_info_desktop {
+    visibility: visible;
+  }
+}
+body .container_head_info_smartphone {
+  visibility: visible;
+}
+@media screen and (min-width: 600px) {
+  body .container_head_info_smartphone {
+    visibility: hidden;
+  }
 }
 body .container_body {
   background: linear-gradient(308deg, #e7e8d1, #cfcfbf 47%);

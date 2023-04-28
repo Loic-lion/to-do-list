@@ -30,6 +30,31 @@ body {
       position: relative;
       z-index: 2;
       box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+      &_info {
+        display: flex;
+        position: absolute;
+        top: 105px;
+        right: 40px;
+        color: rgb(0, 0, 0);
+        font-family: $font;
+        @include responsive-desktop {
+          top: 45px;
+          right: 0px;
+          color: white;
+        }
+        &_desktop {
+          visibility: hidden;
+          @include responsive-desktop {
+            visibility: visible;
+          }
+        }
+        &_smartphone {
+          visibility: visible;
+          @include responsive-desktop {
+            visibility: hidden;
+          }
+        }
+      }
     }
     &_body {
       background: linear-gradient(308deg, #e7e8d1, #cfcfbf 47%);
@@ -50,7 +75,7 @@ body {
 h1 {
   font-size: 50px;
   color: $h1Color;
-  font-family: "Neucha", cursive;
+  font-family: $font;
 }
 ul {
   display: flex;

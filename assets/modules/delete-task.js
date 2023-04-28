@@ -1,8 +1,7 @@
 ////////////////////SUPRESSION DES TACHES + MAJ DU LOCAL STORAGE/////////////////
 
-export function deleteTache(cont) {
-  const container = document.querySelector(cont);
-  const list = container.querySelector("#container_body_list");
+export function deleteTache() {
+  const list = document.querySelector("#container_body_list");
 
   list.addEventListener("click", (event) => {
     if (event.target && event.target.matches("button.delete")) {

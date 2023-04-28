@@ -16,14 +16,20 @@
     <section class="container">
       <div class="container_head">
         <h1>To Do List</h1>
+        <div class="container_head_info">
+          <p class="container_head_info_desktop">↶</p>
+          Delete all checked!
+          <p class="container_head_info_smartphone">⬏</p>
+        </div>
         <form class="container_head_search">
           <input
             type="text"
             id="searchbar"
             class="container_head_search_barre"
-            placeholder="Entrez votre tâche ici..."
+            placeholder="Enter a new task...."
           />
-          <button type="submit" id="bouton-add">Ajouter</button>
+          <button type="submit" id="bouton-add">Add</button>
+          <button id="checked_delete">🗑</button>
         </form>
       </div>
       <div class="container_body" id="parent">
