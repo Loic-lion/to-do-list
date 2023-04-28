@@ -10,6 +10,7 @@ __Le repo comprend:__
 * Un dossier assets qui contient:
    * les modules js
    * les fichiers scss
+   * les images 
 ## Aperçu
 lien github pages : https://loic-lion.github.io/to-do-list/
  
